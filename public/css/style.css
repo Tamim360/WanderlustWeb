@@ -1,0 +1,114 @@
+body {
+  font-family: "Plus Jakarta Sans", "sans-serif" !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: whitesmoke;
+}
+.wanderlustLogo {
+  color: rgb(247, 58, 58);
+  font-size: 3.5rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/* footer design*/
+.f-info {
+  display: flex;
+  height: 8rem;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+  text-align: center;
+}
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+/* cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  height: 20rem;
+}
+.card-body {
+  padding: 0px !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.3;
+  background-color: rgb(255, 255, 255);
+}
+/* show page */
+
+.show-img {
+  height: 30vh;
+  margin-top: 0.7rem;
+}
+
+.btns {
+  display: flex;
+}
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+  border: 0.3rem solid rgba(0, 0, 0, 0.072) !important;
+  border-radius: 1.3rem !important;
+  box-shadow: 0px 4px 8px 5px rgba(4, 0, 57, 0.318);
+}
+.show-location {
+  color: rgba(255, 3, 49, 0.777);
+  font-weight: 650;
+  font-size: 1.1rem;
+}
+.show-description {
+  color: rgba(0, 0, 0, 0.494);
+  text-align: justify;
+}
+/* Map */
+#map {
+  height: 300px;
+  width: 80vh;
+}

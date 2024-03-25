@@ -99,6 +99,20 @@ body {
   box-shadow: 0px 4px 8px 5px rgba(4, 0, 57, 0.318);
 }
 
+.show-location {
+  color: rgba(255, 3, 49, 0.777);
+  font-weight: 650;
+  font-size: 1.1rem;
+}
+.show-description {
+  color: rgba(0, 0, 0, 0.494);
+  text-align: justify;
+}
+/* Map */
+#map {
+  height: 400px;
+  width: 100%;
+}
 @media (width <= 1250px) {
   .show-card {
     width: 95% !important;
@@ -116,19 +130,13 @@ body {
   .nav-link-explore {
     display: none !important;
   }
+  .review-card {
+    width: 90% !important;
+  }
 }
 
-.show-location {
-  color: rgba(255, 3, 49, 0.777);
-  font-weight: 650;
-  font-size: 1.1rem;
-}
-.show-description {
-  color: rgba(0, 0, 0, 0.494);
-  text-align: justify;
-}
-/* Map */
-#map {
-  height: 400px;
-  width: 100%;
+.review-card {
+  background-color: #f2f2f2b5 !important;
+  border: none !important;
+  padding: 15px !important;
 }

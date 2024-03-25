@@ -44,13 +44,7 @@
             </div>
             <%}%>
 
-            <div class="col-6 offset-3 mb-3">
-                <h3>Where you'll be</h3>
-                <div id="map"></div>
-            </div>
-
-
-
+            
 
 
                 <div class="col-8 offset-3 form-label mb-3 mt-3">
@@ -86,6 +80,7 @@
                                 </div>
                             </div>
                             <button class="btn btn-outline-dark">Submit</button>
+                            <br> <br> <br>
                         </form>
                        
                         <%}%>
@@ -94,8 +89,10 @@
                         <% if(listing.reviews.length > 0){%>
                             
                             <div class="row">
-                                <hr>
+                               
+                            
                                 <p><b>All Reviews</b></p>
+                                <hr>
                                 <% for (review of listing.reviews){ %>
                                     <div class="col-5 ms-3 mb-3 card">
                                         <div class="card-body">
@@ -117,6 +114,13 @@
                             <%}%>
 
                 </div>
+                
+    <!-- map -->
+
+    <div class=" ms-auto mb-3">
+        <h3>Where you'll be</h3>
+        <div id="map"></div>
+    </div>
     </div>
 
     <script src="/js/map.js">

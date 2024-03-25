@@ -4,7 +4,7 @@
     const listing = <%- JSON.stringify( listing ) %>;
 </script>
     <div class="row">
-        <div class="col-8 offset-3 mt-3">
+        <div class="col-8 offset-3 mt-3 listing-title">
             <h3>
                 <%= listing.title %>
             </h3>
@@ -47,11 +47,12 @@
             
 
 
-                <div class="col-8 offset-3 form-label mb-3 mt-3">
+                <div class="col-8 offset-3 form-label mb-3 mt-3 review-div">
                    
                     <% if(currUser) { %>
+                       
+                        <h4 class="mt-5">leave a review</h4>
                         <hr>
-                        <h4>leave a review</h4>
                         <form action="/listings/<%= listing._id %>/reviews" method="POST" class="needs-validation"
                             novalidate>
                            

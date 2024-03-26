@@ -36,7 +36,7 @@
         </div>
 
         <% if(currUser && (currUser._id.equals(listing.owner._id))){%>
-            <div class="btns">
+            <div class="btns mt-3">
                 <a href="/listings/<%= listing._id %>/edit" class="btn btn-dark offset-3">Edit</a>
                 <form method="POST" action="/listings/<%= listing._id%>?_method=DELETE">
                     <button class="btn btn-danger offset-3">Delete</button>
@@ -107,7 +107,7 @@
                                             </p>
                                             
                                         </div>
-                                        <% if(currUser._id.equals(review.author._id)){ %>
+                                        <% if(currUser && currUser._id.equals(review.author._id)){ %>
                                         <form method="POST"
                                             action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=Delete">
                                             <button class="btn btn-sm btn-dark mb-3">Delete  </button></form>
